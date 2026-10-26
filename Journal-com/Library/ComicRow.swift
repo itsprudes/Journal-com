@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Строка комикса в списке: значок формата, название, размер и прогресс.
+/// Строка комикса в списке: обложка, название, формат, размер и прогресс.
 struct ComicRow: View {
     let comic: Comic
     /// Номер в очереди папки. `nil` — не показывать.
@@ -15,18 +15,14 @@ struct ComicRow: View {
                     .frame(minWidth: 24, alignment: .trailing)
             }
 
-            Image(systemName: comic.format == .pdf ? "doc.richtext" : "book.closed")
-                .font(.title2)
-                .foregroundStyle(.tint)
-                .frame(width: 44, height: 60)
-                .background(.quaternary, in: RoundedRectangle(cornerRadius: 6))
+            CoverView(comic: comic)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(comic.title)
                     .font(.headline)
                     .lineLimit(2)
 
-                Text("\(comic.format.displayName) · \(comic.fileSize.formatted(.byteCount(style: .file)))")
+                Text(detailsText)
                     .font(.caption)
                     .foregroundStyle(.secondary)
 
@@ -36,6 +32,15 @@ struct ComicRow: View {
             }
         }
         .padding(.vertical, 4)
+    }
+
+    private var detailsText: String {
+        var parts = [comic.format.displayName]
+        if comic.pageCount > 0 {
+            parts.append("\(comic.pageCount) стр.")
+        }
+        parts.append(comic.fileSize.formatted(.byteCount(style: .file)))
+        return parts.joined(separator: " · ")
     }
 
     private var progressText: String {

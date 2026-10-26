@@ -132,6 +132,13 @@ final class ComicImporter {
             return .alreadyInLibrary(existing)
         }
 
+        // Сразу считаем страницы и делаем обложку, чтобы библиотека выглядела готовой.
+        let storedURL = ComicFileStore.fileURL(forStoredFileName: stored.fileName)
+        let format = stored.format
+        let pageCount = await Task.detached(priority: .utility) {
+            ComicInspector.inspect(fileAt: storedURL, format: format, id: id)
+        }.value
+
         let comic = Comic(
             id: id,
             title: Self.title(fromFileName: fileName),
@@ -140,6 +147,7 @@ final class ComicImporter {
             format: stored.format,
             fileSize: stored.size
         )
+        comic.pageCount = pageCount ?? 0
         context.insert(comic)
         return .added(comic)
     }

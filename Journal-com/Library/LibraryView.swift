@@ -11,10 +11,19 @@ struct LibraryView: View {
 
     @State private var pickerMode: ImportPickerMode = .files
     @State private var isPickerPresented = false
+    @State private var openedComic: Comic?
 
     var body: some View {
         NavigationStack {
             List {
+                if !continueReading.isEmpty {
+                    Section("Продолжить чтение") {
+                        ForEach(continueReading) { comic in
+                            comicButton(comic)
+                        }
+                    }
+                }
+
                 if !folders.isEmpty {
                     Section("Папки") {
                         ForEach(folders) { folder in
@@ -34,7 +43,7 @@ struct LibraryView: View {
                 if !comics.isEmpty {
                     Section("Все комиксы") {
                         ForEach(comics) { comic in
-                            ComicRow(comic: comic)
+                            comicButton(comic)
                         }
                         .onDelete(perform: deleteComics)
                     }
@@ -80,7 +89,26 @@ struct LibraryView: View {
                 }
             }
             .comicImportPicker(isPresented: $isPickerPresented, mode: pickerMode)
+            .fullScreenCover(item: $openedComic) { comic in
+                ReaderView(comic: comic)
+            }
         }
+    }
+
+    /// Начатые и недочитанные комиксы, сначала те, что открывали последними.
+    private var continueReading: [Comic] {
+        let started = comics.filter { $0.hasStartedReading && !$0.isFinished }
+        let sorted = started.sorted { ($0.lastReadAt ?? .distantPast) > ($1.lastReadAt ?? .distantPast) }
+        return Array(sorted.prefix(3))
+    }
+
+    private func comicButton(_ comic: Comic) -> some View {
+        Button {
+            openedComic = comic
+        } label: {
+            ComicRow(comic: comic)
+        }
+        .tint(.primary)
     }
 
     private func presentPicker(_ mode: ImportPickerMode) {

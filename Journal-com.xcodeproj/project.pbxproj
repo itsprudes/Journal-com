@@ -6,6 +6,12 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3EA26F20308FA6E00057662E /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA26F23308FA6E00057662E /* ZIPFoundation */; };
+		3EA26F21308FA6E00057662E /* Unrar in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA26F25308FA6E00057662E /* Unrar */; };
+		3EA26F22308FA6E00057662E /* SWCompression in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA26F27308FA6E00057662E /* SWCompression */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3EA26F10308FA6DD0057662E /* Journal-com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal-com.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -35,6 +41,9 @@
 		3EA26F0D308FA6DD0057662E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				3EA26F20308FA6E00057662E /* ZIPFoundation in Frameworks */,
+				3EA26F21308FA6E00057662E /* Unrar in Frameworks */,
+				3EA26F22308FA6E00057662E /* SWCompression in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -73,6 +82,11 @@
 				3EA26F12308FA6DD0057662E /* Journal-com */,
 			);
 			name = "Journal-com";
+			packageProductDependencies = (
+				3EA26F23308FA6E00057662E /* ZIPFoundation */,
+				3EA26F25308FA6E00057662E /* Unrar */,
+				3EA26F27308FA6E00057662E /* SWCompression */,
+			);
 			productName = "Journal-com";
 			productReference = 3EA26F10308FA6DD0057662E /* Journal-com.app */;
 			productType = "com.apple.product-type.application";
@@ -101,6 +115,11 @@
 			);
 			mainGroup = 3EA26F07308FA6DD0057662E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3EA26F24308FA6E00057662E /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				3EA26F26308FA6E00057662E /* XCRemoteSwiftPackageReference "Unrar.swift" */,
+				3EA26F28308FA6E00057662E /* XCRemoteSwiftPackageReference "SWCompression" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3EA26F11308FA6DD0057662E /* Products */;
 			projectDirPath = "";
@@ -343,6 +362,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3EA26F24308FA6E00057662E /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.9.20;
+			};
+		};
+		3EA26F26308FA6E00057662E /* XCRemoteSwiftPackageReference "Unrar.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mtgto/Unrar.swift";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+		3EA26F28308FA6E00057662E /* XCRemoteSwiftPackageReference "SWCompression" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tsolomko/SWCompression";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.8.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EA26F23308FA6E00057662E /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EA26F24308FA6E00057662E /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		3EA26F25308FA6E00057662E /* Unrar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EA26F26308FA6E00057662E /* XCRemoteSwiftPackageReference "Unrar.swift" */;
+			productName = Unrar;
+		};
+		3EA26F27308FA6E00057662E /* SWCompression */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EA26F28308FA6E00057662E /* XCRemoteSwiftPackageReference "SWCompression" */;
+			productName = SWCompression;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3EA26F08308FA6DD0057662E /* Project object */;
 	validationLevel = 1;
