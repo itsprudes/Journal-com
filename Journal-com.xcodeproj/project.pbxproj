@@ -10,9 +10,22 @@
 		3EA26F10308FA6DD0057662E /* Journal-com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal-com.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3EA26F1E308FA6E00057662E /* Exceptions for "Journal-com" folder in "Journal-com" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3EA26F0F308FA6DD0057662E /* Journal-com */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3EA26F12308FA6DD0057662E /* Journal-com */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3EA26F1E308FA6E00057662E /* Exceptions for "Journal-com" folder in "Journal-com" target */,
+			);
 			path = "Journal-com";
 			sourceTree = "<group>";
 		};
@@ -243,6 +256,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Journal-com/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Journal-com";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -280,6 +294,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Journal-com/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Journal-com";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
