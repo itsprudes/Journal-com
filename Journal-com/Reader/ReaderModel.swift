@@ -1,5 +1,6 @@
 import Foundation
 import Observation
+import SwiftData
 import UIKit
 
 /// Состояние экрана чтения: какой комикс открыт, на какой странице мы и видны ли панели.
