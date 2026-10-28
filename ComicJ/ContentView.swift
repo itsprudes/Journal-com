@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Journal-com
+//  ComicJ
 //
 //  Created by Igor.Prudnikov on 26.10.2026.
 //

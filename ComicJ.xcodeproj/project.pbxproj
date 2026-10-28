@@ -13,26 +13,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3EA26F10308FA6DD0057662E /* Journal-com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal-com.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA26F10308FA6DD0057662E /* ComicJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3EA26F1E308FA6E00057662E /* Exceptions for "Journal-com" folder in "Journal-com" target */ = {
+		3EA26F1E308FA6E00057662E /* Exceptions for "ComicJ" folder in "ComicJ" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 3EA26F0F308FA6DD0057662E /* Journal-com */;
+			target = 3EA26F0F308FA6DD0057662E /* ComicJ */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3EA26F12308FA6DD0057662E /* Journal-com */ = {
+		3EA26F12308FA6DD0057662E /* ComicJ */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				3EA26F1E308FA6E00057662E /* Exceptions for "Journal-com" folder in "Journal-com" target */,
+				3EA26F1E308FA6E00057662E /* Exceptions for "ComicJ" folder in "ComicJ" target */,
 			);
-			path = "Journal-com";
+			path = ComicJ;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,7 +52,7 @@
 		3EA26F07308FA6DD0057662E = {
 			isa = PBXGroup;
 			children = (
-				3EA26F12308FA6DD0057662E /* Journal-com */,
+				3EA26F12308FA6DD0057662E /* ComicJ */,
 				3EA26F11308FA6DD0057662E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		3EA26F11308FA6DD0057662E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EA26F10308FA6DD0057662E /* Journal-com.app */,
+				3EA26F10308FA6DD0057662E /* ComicJ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EA26F0F308FA6DD0057662E /* Journal-com */ = {
+		3EA26F0F308FA6DD0057662E /* ComicJ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EA26F1B308FA6E00057662E /* Build configuration list for PBXNativeTarget "Journal-com" */;
+			buildConfigurationList = 3EA26F1B308FA6E00057662E /* Build configuration list for PBXNativeTarget "ComicJ" */;
 			buildPhases = (
 				3EA26F0C308FA6DD0057662E /* Sources */,
 				3EA26F0D308FA6DD0057662E /* Frameworks */,
@@ -79,16 +79,16 @@
 			buildRules = (
 			);
 			fileSystemSynchronizedGroups = (
-				3EA26F12308FA6DD0057662E /* Journal-com */,
+				3EA26F12308FA6DD0057662E /* ComicJ */,
 			);
-			name = "Journal-com";
+			name = ComicJ;
 			packageProductDependencies = (
 				3EA26F23308FA6E00057662E /* ZIPFoundation */,
 				3EA26F25308FA6E00057662E /* Unrar */,
 				3EA26F27308FA6E00057662E /* SWCompression */,
 			);
-			productName = "Journal-com";
-			productReference = 3EA26F10308FA6DD0057662E /* Journal-com.app */;
+			productName = ComicJ;
+			productReference = 3EA26F10308FA6DD0057662E /* ComicJ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3EA26F0B308FA6DD0057662E /* Build configuration list for PBXProject "Journal-com" */;
+			buildConfigurationList = 3EA26F0B308FA6DD0057662E /* Build configuration list for PBXProject "ComicJ" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3EA26F0F308FA6DD0057662E /* Journal-com */,
+				3EA26F0F308FA6DD0057662E /* ComicJ */,
 			);
 		};
 /* End PBXProject section */
@@ -147,7 +147,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3EA26F19308FA6E00057662E /* Debug configuration for PBXProject "Journal-com" */ = {
+		3EA26F19308FA6E00057662E /* Debug configuration for PBXProject "ComicJ" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,7 +210,7 @@
 			};
 			name = Debug;
 		};
-		3EA26F1A308FA6E00057662E /* Release configuration for PBXProject "Journal-com" */ = {
+		3EA26F1A308FA6E00057662E /* Release configuration for PBXProject "ComicJ" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +266,7 @@
 			};
 			name = Release;
 		};
-		3EA26F1C308FA6E00057662E /* Debug configuration for PBXNativeTarget "Journal-com" */ = {
+		3EA26F1C308FA6E00057662E /* Debug configuration for PBXNativeTarget "ComicJ" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -275,8 +275,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Journal-com/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Journal-com";
+				INFOPLIST_FILE = ComicJ/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ComicJ;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.itsprudes.Journal-com";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsprudes.ComicJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -304,7 +304,7 @@
 			};
 			name = Debug;
 		};
-		3EA26F1D308FA6E00057662E /* Release configuration for PBXNativeTarget "Journal-com" */ = {
+		3EA26F1D308FA6E00057662E /* Release configuration for PBXNativeTarget "ComicJ" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,8 +313,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Journal-com/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Journal-com";
+				INFOPLIST_FILE = ComicJ/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ComicJ;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.itsprudes.Journal-com";
+				PRODUCT_BUNDLE_IDENTIFIER = com.itsprudes.ComicJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -345,19 +345,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EA26F0B308FA6DD0057662E /* Build configuration list for PBXProject "Journal-com" */ = {
+		3EA26F0B308FA6DD0057662E /* Build configuration list for PBXProject "ComicJ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EA26F19308FA6E00057662E /* Debug configuration for PBXProject "Journal-com" */,
-				3EA26F1A308FA6E00057662E /* Release configuration for PBXProject "Journal-com" */,
+				3EA26F19308FA6E00057662E /* Debug configuration for PBXProject "ComicJ" */,
+				3EA26F1A308FA6E00057662E /* Release configuration for PBXProject "ComicJ" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		3EA26F1B308FA6E00057662E /* Build configuration list for PBXNativeTarget "Journal-com" */ = {
+		3EA26F1B308FA6E00057662E /* Build configuration list for PBXNativeTarget "ComicJ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EA26F1C308FA6E00057662E /* Debug configuration for PBXNativeTarget "Journal-com" */,
-				3EA26F1D308FA6E00057662E /* Release configuration for PBXNativeTarget "Journal-com" */,
+				3EA26F1C308FA6E00057662E /* Debug configuration for PBXNativeTarget "ComicJ" */,
+				3EA26F1D308FA6E00057662E /* Release configuration for PBXNativeTarget "ComicJ" */,
 			);
 			defaultConfigurationName = Release;
 		};

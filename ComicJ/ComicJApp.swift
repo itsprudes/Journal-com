@@ -1,6 +1,6 @@
 //
-//  Journal_comApp.swift
-//  Journal-com
+//  ComicJApp.swift
+//  ComicJ
 //
 //  Created by Igor.Prudnikov on 26.10.2026.
 //
@@ -9,7 +9,7 @@ import SwiftData
 import SwiftUI
 
 @main
-struct Journal_comApp: App {
+struct ComicJApp: App {
     @State private var importer = ComicImporter()
 
     var body: some Scene {
